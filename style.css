@@ -207,7 +207,7 @@ main {
   order: -1;
 }
 
-/* ---------- Chip list ---------- */
+/* ---------- Chip list (Projects) ---------- */
 .chip-list {
   list-style: none;
   margin: 0;
@@ -226,47 +226,97 @@ main {
   background: transparent;
 }
 
-/* ---------- Certificates ---------- */
-.cert-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 20px;
+/* ---------- Achievements & Certificates list ---------- */
+.cert-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-.cert-card {
-  margin: 0;
+.cert-item {
   border: 1px solid var(--line-color);
   border-radius: 4px;
-  overflow: hidden;
   background: var(--bg);
+  overflow: hidden;
 }
 
-.cert-card img {
-  width: 100%;
-  display: block;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
-  transition: transform 0.4s ease;
+.cert-item summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 16px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
 }
 
-.cert-card:hover img { transform: scale(1.04); }
+.cert-item summary::-webkit-details-marker { display: none; }
 
-.cert-card figcaption {
-  padding: 14px 16px 18px;
+.cert-info {
   display: flex;
   flex-direction: column;
   gap: 4px;
 }
 
-.cert-card strong {
+.cert-info strong {
   font-family: var(--serif);
   font-size: 1rem;
+  font-weight: 600;
 }
 
-.cert-card span {
+.cert-meta {
   font-family: var(--mono);
   font-size: 0.72rem;
   color: var(--text-soft);
+}
+
+.cert-btn {
+  flex: none;
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 8px 14px;
+  border: 1px solid var(--accent);
+  border-radius: 999px;
+  color: var(--accent);
+  transition: background 0.2s ease, color 0.2s ease;
+  white-space: nowrap;
+}
+
+.cert-item:hover .cert-btn {
+  background: var(--accent);
+  color: var(--bg-card);
+}
+
+.cert-btn::after {
+  content: "  ▾";
+}
+
+.cert-item[open] .cert-btn::after {
+  content: "  ▴";
+}
+
+.cert-item[open] .cert-btn {
+  background: var(--accent);
+  color: var(--bg-card);
+}
+
+.cert-reveal {
+  padding: 0 18px 20px;
+  animation: reveal 0.25s ease;
+}
+
+@keyframes reveal {
+  from { opacity: 0; transform: translateY(-4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.cert-reveal img {
+  width: 100%;
+  display: block;
+  border-radius: 3px;
+  border: 1px solid var(--line-color);
 }
 
 /* ---------- Links grid ---------- */
