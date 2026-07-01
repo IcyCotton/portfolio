@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adrian Justine Rodin — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="grain"></div>
+
+  <header class="hero">
+    <button id="theme-toggle" aria-label="Switch theme">
+      <span class="toggle-dot"></span>
+    </button>
+
+    <div class="hero-inner">
+      <div class="hero-frame">
+        <img src="1x1 Pic.jpg" alt="Adrian Justine Rodin" id="profile-img">
+      </div>
+      <p class="eyebrow">CCIS &middot; Computer Science</p>
+      <h1 id="name">Adrian Justine P. Rodin</h1>
+      <p id="course-year">BS Computer Science — 2nd Year</p>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="panel" id="achievements">
+      <h2><span class="corner-tag">Certifications</span>Achievements</h2>
+      <ul class="chip-list">
+        <li>C++ Workshop Certification</li>
+        <li>Visual Studio Code Certification</li>
+      </ul>
+    </section>
+
+    <section class="panel" id="certificates">
+      <h2><span class="corner-tag">Recognition</span>Certificates</h2>
+      <div class="cert-grid">
+
+        <figure class="cert-card">
+          <img src="certificates/Cert_of_Awardees_Innovation_AtiCao.jpg" alt="Certificate of Excellence — Best IoT and Sustainability Project, awarded to AtiCao">
+          <figcaption>
+            <strong>Best IoT &amp; Sustainability Project</strong>
+            <span>CCIS InnoVision 2026 · Team AtiCao · June 20, 2026</span>
+          </figcaption>
+        </figure>
+
+        <figure class="cert-card">
+          <img src="certificates/Cert_of_Participation_Innovation.jpg" alt="Certificate of Participation, CCIS InnoVision 2026, Adrian Justine Rodin">
+          <figcaption>
+            <strong>Certificate of Participation</strong>
+            <span>CCIS InnoVision 2026 · June 20, 2026</span>
+          </figcaption>
+        </figure>
+
+      </div>
+    </section>
+
+    <section class="panel" id="projects">
+      <h2><span class="corner-tag">Built</span>Previous Projects</h2>
+      <ul class="chip-list">
+        <li>Game Development</li>
+        <li>Loan &amp; Bill Management System</li>
+        <li>Music Production</li>
+      </ul>
+    </section>
+
+    <section class="panel" id="live-projects">
+      <h2><span class="corner-tag">Live</span>View Landing Pages</h2>
+      <div class="link-grid">
+        <a class="link-card" href="https://icycotton.github.io/portfolio/LandingPage/landing_page.html" target="_blank" rel="noopener">
+          <span class="link-title">GreenSense</span>
+          <span class="link-sub">Landing Page</span>
+        </a>
+        <a class="link-card" href="./MACHINE PROBLEM (DEMO)/index.html">
+          <span class="link-title">Machine Problem</span>
+          <span class="link-sub">Demo</span>
+        </a>
+        <a class="link-card" href="https://response-time-exam.vercel.app/" target="_blank" rel="noopener">
+          <span class="link-title">M1 Summative Exam</span>
+          <span class="link-sub">Part 3</span>
+        </a>
+        <a class="link-card" href="https://restroom-reviewer-map.vercel.app/" target="_blank" rel="noopener">
+          <span class="link-title">Restroom Reviewer</span>
+          <span class="link-sub">Map Project</span>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Adrian Justine P. Rodin</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
