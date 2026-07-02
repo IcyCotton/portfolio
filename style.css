@@ -211,6 +211,15 @@ main {
   order: -1;
 }
 
+/* ---------- About Me ---------- */
+.about-text {
+  margin: 0;
+  font-size: 0.98rem;
+  line-height: 1.7;
+  color: var(--text-soft);
+  max-width: 62ch;
+}
+
 /* ---------- Chip list (Projects) ---------- */
 .chip-list {
   list-style: none;
