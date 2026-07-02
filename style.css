@@ -1,4 +1,4 @@
-/* ---------- Tokens ---------- */
+/*Tokens*/
 :root {
   --forest: #1B4332;
   --forest-deep: #12302222;
@@ -60,7 +60,7 @@ body {
   background-size: 3px 3px;
 }
 
-/* ---------- Hero ---------- */
+/*  Hero  */
 .hero {
   position: relative;
   padding: 72px 24px 96px;
@@ -157,7 +157,7 @@ body {
 
 body.dark .toggle-dot { transform: translateX(24px); }
 
-/* ---------- Panels ---------- */
+/*  Panels  */
 main {
   max-width: 880px;
   margin: 0 auto;
@@ -211,7 +211,7 @@ main {
   order: -1;
 }
 
-/* ---------- About Me ---------- */
+/*  About Me  */
 .about-text {
   margin: 0;
   font-size: 0.98rem;
@@ -220,7 +220,7 @@ main {
   max-width: 62ch;
 }
 
-/* ---------- Final Project (featured card) ---------- */
+/*  Final Project (featured card)  */
 .feature-card {
   border: 1px solid var(--line-color);
   border-radius: 10px;
@@ -337,7 +337,7 @@ main {
   margin-top: 20px;
 }
 
-/* ---------- Chip list (Projects) ---------- */
+/* Chip list (Projects)  */
 .chip-list {
   list-style: none;
   margin: 0;
@@ -356,7 +356,7 @@ main {
   background: transparent;
 }
 
-/* ---------- Achievements & Certificates list ---------- */
+/* Achievements & Certificates list */
 .cert-list {
   display: flex;
   flex-direction: column;
@@ -490,7 +490,7 @@ main {
   color: var(--text-soft);
 }
 
-/* ---------- Links grid ---------- */
+/* Links grid */
 .link-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -528,7 +528,7 @@ main {
   letter-spacing: 0.08em;
 }
 
-/* ---------- Footer ---------- */
+/*Footer*/
 footer {
   text-align: center;
   padding: 28px 24px 48px;
@@ -539,7 +539,7 @@ footer {
   z-index: 1;
 }
 
-/* ---------- Motion & accessibility ---------- */
+/* Motion & accessibility */
 :focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 2px;
