@@ -220,6 +220,105 @@ main {
   max-width: 62ch;
 }
 
+/* ---------- Final Project (featured card) ---------- */
+.feature-card {
+  border: 1px solid var(--line-color);
+  border-radius: 10px;
+  padding: 24px;
+  background: var(--bg);
+}
+
+.feature-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+
+.feature-title {
+  font-family: var(--serif);
+  font-weight: 600;
+  font-size: 1.3rem;
+  line-height: 1.3;
+  color: var(--accent-2);
+  text-decoration: none;
+}
+
+.feature-title:hover { text-decoration: underline; }
+
+.feature-star {
+  flex: none;
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--gold);
+  border: 1px solid var(--gold);
+  padding: 4px 10px;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+.feature-desc {
+  margin: 0 0 20px;
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: var(--text-soft);
+  max-width: 68ch;
+}
+
+.feature-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.feature-btn {
+  font-family: var(--sans);
+  font-weight: 600;
+  font-size: 0.82rem;
+  padding: 11px 20px;
+  border-radius: 8px;
+  background: var(--btn-bg);
+  color: var(--btn-text);
+  border: 1px solid var(--btn-bg);
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.feature-btn:hover { opacity: 0.85; }
+
+.feature-btn-outline {
+  background: transparent;
+  color: var(--btn-bg);
+}
+
+.tag-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tag-list li {
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--accent);
+  border: 1px solid var(--line-color);
+  padding: 6px 12px;
+  border-radius: 6px;
+}
+
+.photo-view {
+  margin-top: 20px;
+}
+
 /* ---------- Chip list (Projects) ---------- */
 .chip-list {
   list-style: none;
@@ -334,6 +433,43 @@ main {
   border-radius: 6px;
   border: 1px solid var(--line-color);
   box-sizing: border-box;
+}
+
+.screenshot-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  gap: 14px;
+}
+
+.screenshot-grid figure {
+  margin: 0;
+}
+
+.screenshot-grid a {
+  display: block;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--line-color);
+}
+
+.screenshot-grid img {
+  width: 100%;
+  aspect-ratio: 9 / 19.5;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.screenshot-grid a:hover img {
+  transform: scale(1.05);
+}
+
+.screenshot-grid figcaption {
+  margin-top: 6px;
+  text-align: center;
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  color: var(--text-soft);
 }
 
 /* ---------- Links grid ---------- */
